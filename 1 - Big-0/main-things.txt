@@ -1,0 +1,8 @@
+Readability
+Scalability 
+      => Space Complexity 
+      => Time Complexity
+
+
+we sometimes need to tradeoff btw space and time complexity
+and we sometimes need to tradeoff time/space complexity and Readability too 
