@@ -32,7 +32,3 @@ function mergeSortedArrays(array1, array2) {
 
 const solution = mergeSortedArrays([0, 3, 4, 31], [3, 4, 6, 30]);
 console.log(solution);
-
-//! Logic
-//* push array-1 item into mergedArray if Array-2 item is undefined or larger
-//* vice versa for array2

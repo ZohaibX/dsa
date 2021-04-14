@@ -1,5 +1,9 @@
 const arr = ['a', 'b', 'c', 'd', 'e'];
 
+//! Main Point
+// lookups , push and pop in array are O(1)
+// deleting and unshifting is O(n)
+
 /// Lookups
 const lookUp = arr[2]; // O(1) Time
 
