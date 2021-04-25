@@ -89,7 +89,7 @@ class LinkedList {
     }
 
     let first = this.head;
-    this.tail = this.head; // as 1st value will be last later
+    this.tail = this.head; //// whatever this.head is, it will go to the end
     let second = first.next;
 
     while (second) {
