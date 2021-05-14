@@ -1,0 +1,70 @@
+linear search: 
+              This is O(n)
+              will search step by strp from the list 
+
+binary search: 
+              This is O(log n) -- better than O(n)
+              We have sorted array -- 
+
+              if we have list of numbers as 1 2 3 4 5 6 7 8 9
+              and we wanna search for 6
+              then we will split the list into half -- like from 5 
+              if 6 is > 5 -- we will use right side of 5
+              then, we are left with 6,7,8,9
+              we will pick any middle -- may be 7 here 
+              if 6<7 -- we'll use left side of 7 ---
+              and then, we will reach to 6
+
+              this is like BST - O(log n)
+
+
+Tree and Graph Traversals
+Traversal means visiting each node in a tree or Graph
+BFS: 
+    THIS IS -- Breadth First Search
+               visiting the root node of a  BST
+               the root's left - then root's right 
+               then left root's leftnright -- and then right root's leftnright and so on 
+
+               space complexity is more- bcox need to keep track of many child nodes 
+               time is O(n) bcoz visit each node once
+
+                                            9
+                                          /   \ 
+                                        4      20
+                                      /  \    /  \
+                                    1     6  15   170
+
+              BFS will be => [9, 4, 20, 1, 6, 15, 170]
+
+DFS:
+    Depth First Search by it's name - going to depth first 
+
+    in the prev figure --
+    first we will visit 9 - then 4, then 1
+    it will see there is no more child on left and right of 1, it will go back to it's parent node (4)
+    it will see, if there is some child of 4 left - on right of 4 -- it will go to right of 4 -- at 6
+    then there is no more child of 6, it will go back to it's parent node - 4 
+    then no child of 4 left for Traversal -- it will go back to it's parent - 9
+    and will start the process on the right of 9 
+
+    space complexity is less here
+    time is O(n) bcoz visit each node once
+
+                      9
+                    /   \ 
+                  4      20
+                /  \    /  \
+              1     6  15   170
+                              
+    DFS will be => [9, 4, 1, 6, 20, 15, 170]
+
+    Inorder traversal by DFS => [1,4,6,9,15,20,170]
+    preOrder => [9,4,1,6,20,15,170]
+    postOrder => [1,6,4,15,170,20,9]
+
+BFS: shortest path, closer nodes but more memory
+DFS: Less memory, good to question if path exist but it can get slow.
+    
+One Important Thing 
+Bellman-Ford or Dijkstra are the algos that allow us to find the shortest path btw 2 nodes of a WEIGHTED graph
